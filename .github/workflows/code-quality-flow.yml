@@ -1,7 +1,13 @@
-name: Code Quality Flow
-on: [push]
+name: Pulumi Gardener Kubernetes Shoot Cluster CI
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
 jobs:
-  Lint:
+  code_quality:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Code

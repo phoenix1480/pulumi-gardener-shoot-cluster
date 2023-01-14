@@ -1,4 +1,4 @@
-name: lint
+name: Code Quality Flow
 on: [push]
 jobs:
   Lint:

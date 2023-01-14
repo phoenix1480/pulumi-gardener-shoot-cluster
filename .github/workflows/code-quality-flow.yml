@@ -1,0 +1,32 @@
+name: lint
+on: [push]
+jobs:
+  Lint:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - name: Setup Python Environment
+      uses: setup-python@v4
+      with:
+        python-version: '3.10'
+        cache: 'pip'
+    - name: Install Dependencies
+      run: pip3 install -r requirements.txt
+    - name: Install Pulumi Gardener Kubernetes Shoot Cluster Package
+      run: pip3 install .
+    - name: Lint Codebase
+      uses: github/super-linter@v4
+      env:
+        DEFAULT_BRANCH: main
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        VALIDATE_ALL_CODEBASE: false
+        VALIDATE_PYTHON: true
+    - name: Unit Tests
+      run: python -m unittest discover tests "test*.py"
+
+      
+
+

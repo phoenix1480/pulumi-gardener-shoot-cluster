@@ -34,14 +34,10 @@ jobs:
       env:
         DEFAULT_BRANCH: main
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        VALIDATE_ALL_CODEBASE: false
         VALIDATE_GITHUB_ACTIONS: true
         VALIDATE_MARKDOWN: true
         VALIDATE_PYTHON: true
         VALIDATE_PYTHON_PYLINT: true
-        VALIDATE_PYTHON_MYPY: false
-        VALIDATE_PYTHON_ISORT: false
-        VALIDATE_PYTHON_BLACK: false
         VALIDATE_YAML: true
 
     - name: Unit Tests

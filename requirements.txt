@@ -1,1 +1,2 @@
-requests==2.28.1
+pulumi==3.51.1
+pulumi-kubernetes=3.23.1

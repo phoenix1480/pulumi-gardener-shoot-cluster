@@ -8,5 +8,6 @@ class TestWakeUp(unittest.TestCase):
         msg = "Wake Up Pipeline"
         assert "Wake" in msg
 
+
 if __name__ == '__main__':
     unittest.main()

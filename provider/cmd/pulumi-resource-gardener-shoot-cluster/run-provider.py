@@ -16,8 +16,8 @@
 import sys
 
 import pulumi.provider
-import gardener-shoot-cluster_provider
-import gardener-shoot-cluster_provider.provider
+import gardener_shoot_cluster_provider
+import gardener_shoot_cluster_provider.provider
 
 
 if __name__ == '__main__':

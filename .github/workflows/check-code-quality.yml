@@ -35,7 +35,6 @@ jobs:
       uses: github/super-linter/slim@v4
       env:
         DEFAULT_BRANCH: main
-        FILTER_REGEX_EXCLUDE: [".*examples/.*",".*provider/.*",".*sdk/.*"]
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         VALIDATE_GITHUB_ACTIONS: true
         VALIDATE_MARKDOWN: true

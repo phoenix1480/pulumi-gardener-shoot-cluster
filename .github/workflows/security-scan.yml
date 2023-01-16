@@ -39,5 +39,5 @@ jobs:
 
     - name: Generate SPDX SBOM
       uses: anchore/sbom-action@v0
-        with:
-          path: ./
+      with:
+        path: ./

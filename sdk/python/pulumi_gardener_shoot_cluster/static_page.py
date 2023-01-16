@@ -19,7 +19,7 @@ class StaticPageArgs:
         The set of arguments for constructing a StaticPage resource.
         :param pulumi.Input[str] index_content: The HTML content for index.html.
         """
-        pulumi.set(__self__, "index_content", index_content)
+        pulumi.set(self, "index_content", index_content)
 
     @property
     @pulumi.getter(name="indexContent")
@@ -63,9 +63,9 @@ class StaticPage(pulumi.ComponentResource):
     def __init__(self, resource_name: str, *args, **kwargs):
         resource_args, opts = _utilities.get_resource_args_opts(StaticPageArgs, pulumi.ResourceOptions, *args, **kwargs)
         if resource_args is not None:
-            __self__._internal_init(resource_name, opts, **resource_args.__dict__)
+            self._internal_init(resource_name, opts, **resource_args.__dict__)
         else:
-            __self__._internal_init(resource_name, *args, **kwargs)
+            self._internal_init(resource_name, *args, **kwargs)
 
     def _internal_init(self,
                  resource_name: str,
@@ -90,7 +90,7 @@ class StaticPage(pulumi.ComponentResource):
             __props__.__dict__["index_content"] = index_content
             __props__.__dict__["bucket"] = None
             __props__.__dict__["website_url"] = None
-        super(StaticPage, __self__).__init__(
+        super(StaticPage, self).__init__(
             'gardener-shoot-cluster:index:StaticPage',
             resource_name,
             __props__,

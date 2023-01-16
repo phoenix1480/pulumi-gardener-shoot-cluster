@@ -12,7 +12,7 @@ __all__ = ['ProviderArgs', 'Provider']
 
 @pulumi.input_type
 class ProviderArgs:
-    def __init__(__self__):
+    def __init__(self):
         """
         The set of arguments for constructing a Provider resource.
         """
@@ -21,7 +21,7 @@ class ProviderArgs:
 
 class Provider(pulumi.ProviderResource):
     @overload
-    def __init__(__self__,
+    def __init__(self,
                  resource_name: str,
                  opts: Optional[pulumi.ResourceOptions] = None,
                  __props__=None):
@@ -32,7 +32,7 @@ class Provider(pulumi.ProviderResource):
         """
         ...
     @overload
-    def __init__(__self__,
+    def __init__(self,
                  resource_name: str,
                  args: Optional[ProviderArgs] = None,
                  opts: Optional[pulumi.ResourceOptions] = None):
@@ -43,14 +43,14 @@ class Provider(pulumi.ProviderResource):
         :param pulumi.ResourceOptions opts: Options for the resource.
         """
         ...
-    def __init__(__self__, resource_name: str, *args, **kwargs):
+    def __init__(self, resource_name: str, *args, **kwargs):
         resource_args, opts = _utilities.get_resource_args_opts(ProviderArgs, pulumi.ResourceOptions, *args, **kwargs)
         if resource_args is not None:
             __self__._internal_init(resource_name, opts, **resource_args.__dict__)
         else:
             __self__._internal_init(resource_name, *args, **kwargs)
 
-    def _internal_init(__self__,
+    def _internal_init(self,
                  resource_name: str,
                  opts: Optional[pulumi.ResourceOptions] = None,
                  __props__=None):

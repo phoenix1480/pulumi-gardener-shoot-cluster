@@ -13,7 +13,7 @@ __all__ = ['StaticPageArgs', 'StaticPage']
 
 @pulumi.input_type
 class StaticPageArgs:
-    def __init__(__self__, *,
+    def __init__(self, *,
                  index_content: pulumi.Input[str]):
         """
         The set of arguments for constructing a StaticPage resource.
@@ -36,7 +36,7 @@ class StaticPageArgs:
 
 class StaticPage(pulumi.ComponentResource):
     @overload
-    def __init__(__self__,
+    def __init__(self,
                  resource_name: str,
                  opts: Optional[pulumi.ResourceOptions] = None,
                  index_content: Optional[pulumi.Input[str]] = None,
@@ -49,7 +49,7 @@ class StaticPage(pulumi.ComponentResource):
         """
         ...
     @overload
-    def __init__(__self__,
+    def __init__(self,
                  resource_name: str,
                  args: StaticPageArgs,
                  opts: Optional[pulumi.ResourceOptions] = None):
@@ -60,14 +60,14 @@ class StaticPage(pulumi.ComponentResource):
         :param pulumi.ResourceOptions opts: Options for the resource.
         """
         ...
-    def __init__(__self__, resource_name: str, *args, **kwargs):
+    def __init__(self, resource_name: str, *args, **kwargs):
         resource_args, opts = _utilities.get_resource_args_opts(StaticPageArgs, pulumi.ResourceOptions, *args, **kwargs)
         if resource_args is not None:
             __self__._internal_init(resource_name, opts, **resource_args.__dict__)
         else:
             __self__._internal_init(resource_name, *args, **kwargs)
 
-    def _internal_init(__self__,
+    def _internal_init(self,
                  resource_name: str,
                  opts: Optional[pulumi.ResourceOptions] = None,
                  index_content: Optional[pulumi.Input[str]] = None,

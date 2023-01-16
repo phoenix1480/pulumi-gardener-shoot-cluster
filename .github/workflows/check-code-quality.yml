@@ -35,12 +35,14 @@ jobs:
       uses: github/super-linter/slim@v4
       env:
         DEFAULT_BRANCH: main
+        FILTER_REGEX_EXCLUDE: .*examples/.*,.*provider/.*,.*sdk/.*
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         VALIDATE_GITHUB_ACTIONS: true
         VALIDATE_MARKDOWN: true
         VALIDATE_PYTHON: true
         VALIDATE_PYTHON_PYLINT: true
         VALIDATE_YAML: true
+
 
     - name: Unit Tests
       run: python -m unittest discover tests "test*.py"

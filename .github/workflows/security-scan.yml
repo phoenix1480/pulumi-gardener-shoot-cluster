@@ -4,6 +4,8 @@ on:
     branches:
       - main
   pull_request:
+    branches:
+      - main
 jobs:
   security-scan:
     name: Security Scan
@@ -28,6 +30,6 @@ jobs:
       uses: github/codeql-action/init@v2
       with:
         languages: python
-        
+
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2

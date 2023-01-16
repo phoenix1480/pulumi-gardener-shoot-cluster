@@ -1,6 +1,6 @@
-# Pulumi Gardener Kubernetes Shoot Cluster Component
+# Pulumi Gardener Shoot Cluster Component
 
-The Gardener Kubernetes shoot cluster component lets you create, deploy, and manage [Gardener Kubernetes](https://gardener.cloud/) shoot clusters for multiple infrastructure providers.
+The Gardener shoot cluster component lets you create, deploy, and manage [Gardener Kubernetes](https://gardener.cloud/) shoot clusters for multiple infrastructure providers.
 
 ## Supported Providers
 

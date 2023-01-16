@@ -1,4 +1,4 @@
-name: Pulumi Gardener Kubernetes Shoot Cluster CI
+name: Pulumi Gardener Shoot Cluster Code Quality
 on:
   push:
     branches:
@@ -9,6 +9,7 @@ on:
 
 jobs:
   code-quality-check:
+    name: Code Quality Check
     runs-on: ubuntu-latest
     strategy:
       matrix:

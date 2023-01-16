@@ -1,10 +1,11 @@
 
+---
 name: Pulumi Gardener Shoot Cluster Security Scan
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   security-scan:

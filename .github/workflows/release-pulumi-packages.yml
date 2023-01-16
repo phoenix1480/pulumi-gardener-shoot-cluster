@@ -38,7 +38,7 @@ jobs:
         with:
           repo: pulumi/pulumictl
       - name: Install Pulumi CLI
-        uses: pulumi/action-install-pulumi-cli@v1.0.1
+        uses: pulumi/action-install-pulumi-cli@v2.0.0
       - run: make build_provider
       - name: Create Provider Binaries
         run: make dist

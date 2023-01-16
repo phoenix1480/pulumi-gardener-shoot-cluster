@@ -41,6 +41,3 @@ jobs:
       uses: anchore/sbom-action@v0
       with:
         path: "./"
-
-    - name: Display SPDX SBOM
-      run: cat /tmp/sbom-action-AroSte/pulumi-gardener-shoot-cluster-security-scan.spdx.json

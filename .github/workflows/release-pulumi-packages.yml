@@ -53,6 +53,7 @@ jobs:
       fail-fast: true
       matrix:
         pythonversion:
+          - "3.8"
           - "3.9"
           - "3.10"
   publish_sdk:
@@ -75,6 +76,7 @@ jobs:
         nodeversion:
           - 14.x
         pythonversion:
+          - "3.8"
           - "3.9"
           - "3.10"
     steps:

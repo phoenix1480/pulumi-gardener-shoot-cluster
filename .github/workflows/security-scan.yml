@@ -3,9 +3,9 @@
 name: Security Scan
 on:
   push:
-    branches: ["main"]
   pull_request:
-    branches: ["main"]
+    branches:
+    - main
 
 jobs:
   security-scan:
@@ -37,7 +37,7 @@ jobs:
       with:
         sarif_file: 'trivy-results.sarif'
 
-    - name: Generate SPDX SBOM
+    - name: Generate SBOM in SPDX
       uses: anchore/sbom-action@v0
       with:
         path: "./"

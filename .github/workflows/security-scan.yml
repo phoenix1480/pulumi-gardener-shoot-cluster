@@ -37,5 +37,7 @@ jobs:
       with:
         sarif_file: 'trivy-results.sarif'
 
-    - name: Generate CycloneDX SBOM
-      uses: CycloneDX/gh-python-generate-sbom@v1
+    - name: Generate SPDX SBOM
+      uses: anchore/sbom-action@v0
+        with:
+          path: ./

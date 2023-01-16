@@ -1,5 +1,9 @@
 # Gardener Shoot Cluster Pulumi Component
 
+[![Security Scan](https://github.com/phoenix1480/pulumi-gardener-shoot-cluster/actions/workflows/security-scan.yml/badge.svg?branch=main)](https://github.com/phoenix1480/pulumi-gardener-shoot-cluster/actions/workflows/security-scan.yml)
+[![Code Quality Scan](https://github.com/phoenix1480/pulumi-gardener-shoot-cluster/actions/workflows/code-quality-scan.yml/badge.svg)](https://github.com/phoenix1480/pulumi-gardener-shoot-cluster/actions/workflows/code-quality-scan.yml)
+
+
 The Gardener shoot cluster component lets you create, deploy, and manage [Gardener Kubernetes](https://gardener.cloud/) shoot clusters for multiple infrastructure providers.
 
 ## Supported Providers

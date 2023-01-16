@@ -1,6 +1,6 @@
 
 ---
-name: Pulumi Gardener Shoot Cluster Security Scan
+name: Security Scan
 on:
   push:
     branches: ["main"]

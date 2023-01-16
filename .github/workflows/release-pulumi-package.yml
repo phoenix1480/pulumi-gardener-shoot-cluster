@@ -1,5 +1,5 @@
 ---
-name: Pulumi Gardener Shoot Cluster Release
+name: Release
 on:
   push:
     tags:

@@ -1,5 +1,5 @@
 ---
-name: Pulumi Gardener Shoot Cluster Code Quality
+name: Code Quality Scans
 on:
   push:
     branches:

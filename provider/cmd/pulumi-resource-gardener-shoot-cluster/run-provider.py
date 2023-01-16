@@ -21,4 +21,4 @@ import gardener_shoot_cluster_provider.provider
 
 
 if __name__ == '__main__':
-    pulumi.provider.main(gardener-shoot-cluster_provider.provider.Provider(), sys.argv[1:])
+    pulumi.provider.main(gardener_shoot_cluster_provider.provider.Provider(), sys.argv[1:])

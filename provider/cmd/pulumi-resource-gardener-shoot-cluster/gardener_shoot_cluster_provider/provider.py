@@ -18,14 +18,14 @@ from pulumi import Inputs, ResourceOptions
 from pulumi.provider import ConstructResult
 import pulumi.provider as provider
 
-import gardener-shoot-cluster_provider
-from gardener-shoot-cluster_provider.staticpage import StaticPage, StaticPageArgs
+import gardener_shoot_cluster_provider
+from gardener_shoot_cluster_provider.staticpage import StaticPage, StaticPageArgs
 
 
 class Provider(provider.Provider):
 
     def __init__(self) -> None:
-        super().__init__(gardener-shoot-cluster_provider.__version__, gardener-shoot-cluster_provider.__schema__)
+        super().__init__(gardener_shoot_cluster_provider.__version__, gardener_shoot_cluster_provider.__schema__)
 
     def construct(self,
                   name: str,

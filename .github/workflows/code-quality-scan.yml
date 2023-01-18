@@ -39,6 +39,5 @@ jobs:
         VALIDATE_PYTHON_PYLINT: true
         VALIDATE_YAML: true
 
-
     - name: Unit Tests
       run: python -m unittest discover tests "test*.py"

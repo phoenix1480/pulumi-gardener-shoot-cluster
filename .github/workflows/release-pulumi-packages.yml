@@ -30,7 +30,7 @@ jobs:
       - name: Unshallow clone for tags
         run: git fetch --prune --unshallow --tags
       - name: Setup Python
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v4
         with:
           python-version: ${{matrix.pythonversion}}
       - name: Install pulumictl
@@ -104,7 +104,7 @@ jobs:
         with:
           dotnet-version: ${{matrix.dotnetversion}}
       - name: Setup Python
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v4
         with:
           python-version: ${{matrix.pythonversion}}
       - name: Build SDK

@@ -1,2 +1,2 @@
-pulumi==3.51.1
+pulumi==3.63.0
 pulumi_kubernetes==3.23.1

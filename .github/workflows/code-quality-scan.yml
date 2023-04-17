@@ -30,7 +30,7 @@ jobs:
       run: pip3 install -r requirements.txt
 
     - name: Lint Codebase
-      uses: github/super-linter/slim@v4
+      uses: github/super-linter/slim@v5
       env:
         DEFAULT_BRANCH: main
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
